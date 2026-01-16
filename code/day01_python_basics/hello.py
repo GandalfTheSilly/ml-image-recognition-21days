@@ -3,9 +3,9 @@ print('Day 1 Done!')
 usr_name = input("Enter a username, please: ")
 age = input("Enter your age, please: ")
 
-if age.isdigit() == False:
-    print(f"""{age} is not a valid name.
-          Enter a vallid one: """)
+while age.isdigit() == False:
+    print(f"""{age} is not a valid age.
+          Enter a valid one: """)
     age = input("Enter your age, please: ")
 else:
     age = int(age)
