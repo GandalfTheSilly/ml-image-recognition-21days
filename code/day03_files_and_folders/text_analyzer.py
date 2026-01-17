@@ -1,20 +1,20 @@
 import string
 def main():
-    
-    read_text_file()        
+    global file, cleaned_lwr_file
+    file = read_text_file()
     letters_in_the_file()
-    clean_text()
+    cleaned_lwr_file = clean_text()
     get_stats()
     top_words()
+
 
 def read_text_file():
         
         with open("sample.txt", "r") as file:
             file = file.read()
-            print("""Your file succesfully read by program!""")
+            print("""Your file successfully read by program!""")
         return file
 
-file = read_text_file()
 
 def letters_in_the_file():
     
@@ -40,7 +40,7 @@ def clean_text():
     print(f"""
 {cleaned_lwr_file}""")
     return cleaned_lwr_file
-cleaned_lwr_file = clean_text()   
+
 
 def get_stats():
     
